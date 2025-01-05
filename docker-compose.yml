@@ -1,0 +1,8 @@
+services:
+  icecast:
+    image: zazi641/icecast:latest
+    volumes:
+      - ./logs:/var/log/icecast
+      - ./config:/home/
+    ports:
+      - 8000:8000
